@@ -1,0 +1,20 @@
+<html>
+	<body>
+		<button onclick="attachAlert();">Start Error</button>
+		<p id="pMachine">Machine: </p>
+	</body>
+	<script>
+		var i, el;
+
+		function attachAlert(element) {
+			element.onclick = function() { alert(element.innerHTML); };
+		}
+
+		for (i = 0; i < 1000000; i++) {
+			el = document.createElement('div');
+			el.innerHTML = i;
+			attachAlert(el);
+		}
+
+	</script>
+</html>
