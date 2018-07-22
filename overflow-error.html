@@ -1,6 +1,6 @@
 <html>
 	<body>
-		<button onclick="attachAlert();">Start Error</button>
+		<button onclick="attachAlert(el);">Start Error</button>
 		<p id="pMachine">Machine: </p>
 	</body>
 	<script>
@@ -13,7 +13,7 @@
 		for (i = 0; i < 1000000; i++) {
 			el = document.createElement('div');
 			el.innerHTML = i;
-			attachAlert(el);
+			
 		}
 
 	</script>
